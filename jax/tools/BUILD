@@ -17,9 +17,10 @@ licenses(["notice"])
 package(default_visibility = ["//visibility:public"])
 
 py_library(
-    name = "jax_to_hlo",
-    srcs = ["jax_to_hlo.py"],
+    name = "jax_to_proto",
+    srcs = ["jax_to_proto.py"],
     deps = [
         "//third_party/py/jax",
+        "//third_party/py/tensorflow",
     ],
 )
